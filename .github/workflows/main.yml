@@ -63,7 +63,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > /dev/null --quiet
+          haxelib install hxcpp --quiet
           .\"setup/windows.bat"
       - name: rebuild extension-webm
         run: haxelib run lime rebuild extension-webm windows
